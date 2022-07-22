@@ -1,0 +1,17 @@
+@use "../../styles/_mixins/Button.module.scss" as button;
+@use "../../styles/_mixins/Link.module.scss" as link;
+
+.button {
+  &.primary {
+    @include button.primary;
+  }
+
+  &.secondary {
+    @include button.primary;
+    @include button.secondary;
+  }
+
+  &.link {
+    @include link.primary;
+  }
+}

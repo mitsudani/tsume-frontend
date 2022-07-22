@@ -1,6 +1,6 @@
 import { $enum } from "ts-enum-util";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import Button, { ButtonVariant } from "../components/Button/Button";
+import Button, { ButtonVariant } from "../components/Button";
 
 export default {
   title: "Button",
@@ -29,7 +29,7 @@ Secondary.args = {
   variant: ButtonVariant.Secondary,
 };
 
-export const LinkLikePrimary = Template.bind({});
-LinkLikePrimary.args = {
+export const Link = Template.bind({});
+Link.args = {
   variant: ButtonVariant.Link,
 };

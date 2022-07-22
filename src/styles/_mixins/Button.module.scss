@@ -1,0 +1,22 @@
+@use "../_variables/colors.scss" as _color;
+
+@mixin primary {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: inline-block;
+  border: 0.0625rem solid _color.$color-salmon;
+  border-radius: 1.563rem;
+  padding: 0.5rem 1rem;
+  min-width: 10rem;
+  color: _color.$color-white;
+  background-color: _color.$color-salmon;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(120%);
+  }
+}
+
+@mixin secondary {
+}

@@ -26,7 +26,10 @@ const Button = ({
   variant = ButtonVariant.Primary,
   ...attributes
 }: ButtonProps): JSX.Element => (
-  <button className={`${className} ${stylesMap[variant]}`} {...attributes}>
+  <button
+    className={`${styles.button} ${stylesMap[variant]} ${className}`}
+    {...attributes}
+  >
     {children}
   </button>
 );
