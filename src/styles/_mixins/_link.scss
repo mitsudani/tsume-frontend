@@ -1,0 +1,18 @@
+@use "../_variables/_colors.scss" as _color;
+
+@mixin primary {
+  background-color: transparent;
+  border: 0;
+  font-size: 1rem;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  color: _color.$violet;
+  text-underline-offset: 0.3rem;
+}
+
+@mixin secondary {
+  @include primary();
+  color: _color.$white;
+  text-decoration: none;
+}
