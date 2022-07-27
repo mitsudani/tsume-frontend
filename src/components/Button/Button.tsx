@@ -4,13 +4,15 @@ import styles from "./Button.module.scss";
 export enum ButtonVariant {
   Primary,
   Secondary,
-  Link,
+  LinkPrimary,
+  LinkSecondary,
 }
 
 const stylesMap = {
   [ButtonVariant.Primary]: styles.primary,
   [ButtonVariant.Secondary]: styles.secondary,
-  [ButtonVariant.Link]: styles.link,
+  [ButtonVariant.LinkPrimary]: styles.linkPrimary,
+  [ButtonVariant.LinkSecondary]: styles.linkSecondary,
 };
 
 interface ButtonProps {

@@ -11,7 +11,11 @@
     @include button.secondary;
   }
 
-  &.link {
+  &.linkPrimary {
     @include link.primary;
+  }
+
+  &.linkSecondary {
+    @include link.secondary;
   }
 }

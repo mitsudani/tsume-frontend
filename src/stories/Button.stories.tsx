@@ -29,7 +29,12 @@ Secondary.args = {
   variant: ButtonVariant.Secondary,
 };
 
-export const Link = Template.bind({});
-Link.args = {
-  variant: ButtonVariant.Link,
+export const LinkPrimary = Template.bind({});
+LinkPrimary.args = {
+  variant: ButtonVariant.LinkPrimary,
+};
+
+export const LinkSecondary = Template.bind({});
+LinkSecondary.args = {
+  variant: ButtonVariant.LinkSecondary,
 };
