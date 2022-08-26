@@ -9,7 +9,7 @@ const HeaderNavbar = (): JSX.Element => {
         <li>
           <NavLink
             to={HOME}
-            className={({ isActive }) => (isActive ? "activeLink" : "")}
+            className={({ isActive }) => (isActive ? "styles.activeLink" : "")}
             data-testid="header-navbar-home-link"
           >
             HOME
@@ -19,7 +19,7 @@ const HeaderNavbar = (): JSX.Element => {
         <li>
           <NavLink
             to={HOW_IT_WORKS}
-            className={({ isActive }) => (isActive ? "activeLink" : "")}
+            className={({ isActive }) => (isActive ? "styles.activeLink" : "")}
             data-testid="header-navbar-howItWorks-link"
           >
             HOW IT WORKS
