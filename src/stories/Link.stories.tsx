@@ -24,6 +24,11 @@ export const Primary = Template.bind({});
 Primary.args = {
   variant: LinkVariant.Primary,
 };
+Primary.parameters = {
+  backgrounds: {
+    default: "pastel-salmon",
+  },
+};
 
 export const Secondary = Template.bind({});
 Secondary.args = {

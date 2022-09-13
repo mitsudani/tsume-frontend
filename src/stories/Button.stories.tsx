@@ -33,6 +33,11 @@ export const LinkPrimary = Template.bind({});
 LinkPrimary.args = {
   variant: ButtonVariant.LinkPrimary,
 };
+LinkPrimary.parameters = {
+  backgrounds: {
+    default: "pastel-salmon",
+  },
+};
 
 export const LinkSecondary = Template.bind({});
 LinkSecondary.args = {

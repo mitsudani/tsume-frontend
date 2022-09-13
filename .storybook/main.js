@@ -7,6 +7,7 @@ module.exports = {
     "@storybook/preset-create-react-app",
     "@storybook/addon-interactions",
     "@storybook/addon-a11y",
+    "@storybook/addon-backgrounds",
   ],
   framework: "@storybook/react",
   core: {

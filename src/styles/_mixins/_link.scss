@@ -1,18 +1,23 @@
 @use "../_variables/_colors.scss" as _color;
+@use "../_variables/_fonts.scss" as _font;
 
 @mixin primary {
   background-color: transparent;
   border: 0;
-  font-size: 1rem;
+  font-size: 1.25rem;
   padding: 0;
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
   color: _color.$violet;
   text-underline-offset: 0.3rem;
+  font-family: _font.$mukta;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 @mixin secondary {
   @include primary();
-  color: _color.$white;
-  text-decoration: none;
+  color: _color.$pastel-salmon;
 }

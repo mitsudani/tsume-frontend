@@ -1,9 +1,11 @@
 @use "../_variables/_colors.scss" as _color;
+@use "../_variables/_fonts.scss" as _font;
 
 @mixin primary {
   text-align: center;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-family: _font.$mukta;
   display: inline-block;
   border: 0.0625rem solid _color.$salmon;
   border-radius: 1.563rem;
@@ -15,7 +17,7 @@
   cursor: pointer;
 
   &:hover {
-    filter: brightness(120%);
+    filter: brightness(125%);
   }
 }
 
