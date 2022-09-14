@@ -1,0 +1,28 @@
+@use "../../styles/_variables/_colors.scss" as _color;
+@use "../../styles/_variables/_fonts.scss" as _font;
+@use "../../styles/_mixins/_container.scss" as _container;
+@use "../../styles/_mixins/_link.scss" as _link;
+
+.container {
+  @include _container.flex_container(row, flex-start, center);
+  background: _color.$lilac;
+  position: fixed;
+  width: 100%;
+
+  .logoAndNavbar,
+  .buttons {
+    @include _container.flex_container(row, flex-start, center);
+
+    .tsumeLogo {
+      max-width: 5rem;
+    }
+
+    .padlock {
+      max-width: 2rem;
+    }
+  }
+
+  .separator {
+    color: _color.$white;
+  }
+}

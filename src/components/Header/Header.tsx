@@ -10,18 +10,18 @@ import Button from "../Button";
 const Header = (): JSX.Element => {
   return (
     <header className={styles.container}>
-      <div>
+      <div className={styles.logoAndNavbar}>
         <Link to={HOME}>
           <img
             src={logoPlaceholder}
             alt="Tsume"
-            className={styles.logo}
+            className={styles.tsumeLogo}
             data-testid="logo-home-link"
           />
         </Link>
         <HeaderNavbar />
       </div>
-      <div>
+      <div className={styles.buttons}>
         <img src={padlock} alt="padlock" className={styles.padlock} />
         <LinkComponent to={LOGIN}>Login</LinkComponent>
         <div className={styles.separator}>|</div>
