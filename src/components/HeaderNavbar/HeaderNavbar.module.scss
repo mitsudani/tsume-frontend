@@ -4,11 +4,16 @@
 @use "../../styles/_mixins/_link.scss" as _link;
 
 .container {
+  margin-left: 2rem;
+
   ul {
     list-style: none;
     @include _container.flex_container(row, flex-start, center);
-    margin-right: 2.5rem;
     background: _color.$lilac;
+
+    li {
+      margin-right: 0.7rem;
+    }
   }
 
   .separator {

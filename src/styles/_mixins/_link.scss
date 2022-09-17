@@ -8,16 +8,21 @@
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: _color.$violet;
+  color: _color.$white;
   text-underline-offset: 0.3rem;
   font-family: _font.$mukta;
 
   &:hover {
     text-decoration: underline;
+    color: _color.$violet;
   }
 }
 
 @mixin secondary {
   @include primary();
-  color: _color.$pastel-salmon;
+  color: _color.$violet;
+
+  &:hover {
+    color: _color.$white;
+  }
 }

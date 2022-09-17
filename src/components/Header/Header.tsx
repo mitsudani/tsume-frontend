@@ -4,7 +4,7 @@ import styles from "./Header.module.scss";
 import logoPlaceholder from "../../assets/images/tsume_logo_placeholder.png";
 import padlock from "../../assets/images/padlock_white.png";
 import HeaderNavbar from "../HeaderNavbar";
-import LinkComponent from "../Link";
+import LinkComponent, { LinkVariant } from "../Link";
 import Button from "../Button";
 
 const Header = (): JSX.Element => {
@@ -22,8 +22,10 @@ const Header = (): JSX.Element => {
         <HeaderNavbar />
       </div>
       <div className={styles.buttons}>
-        <img src={padlock} alt="padlock" className={styles.padlock} />
-        <LinkComponent to={LOGIN}>Login</LinkComponent>
+        <LinkComponent to={LOGIN} variant={LinkVariant.Primary}>
+          <img src={padlock} alt="padlock" className={styles.padlock} />
+          Login
+        </LinkComponent>
         <div className={styles.separator}>|</div>
         <Button>Sign Up</Button>
       </div>

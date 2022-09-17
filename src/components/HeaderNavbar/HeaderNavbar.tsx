@@ -12,7 +12,7 @@ const HeaderNavbar = (): JSX.Element => {
             className={({ isActive }) => (isActive ? "styles.activeLink" : "")}
             data-testid="header-navbar-home-link"
           >
-            HOME
+            Home
           </NavLink>
         </li>
         <li className={styles.separator}>|</li>
@@ -22,7 +22,7 @@ const HeaderNavbar = (): JSX.Element => {
             className={({ isActive }) => (isActive ? "styles.activeLink" : "")}
             data-testid="header-navbar-howItWorks-link"
           >
-            HOW IT WORKS
+            How It Works
           </NavLink>
         </li>
       </ul>
