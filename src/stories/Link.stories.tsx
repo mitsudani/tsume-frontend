@@ -26,13 +26,18 @@ Primary.args = {
 };
 Primary.parameters = {
   backgrounds: {
-    default: "pastel-salmon",
+    default: "lilac",
   },
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   variant: LinkVariant.Secondary,
+};
+Secondary.parameters = {
+  backgrounds: {
+    default: "lilac",
+  },
 };
 
 export const ButtonPrimary = Template.bind({});

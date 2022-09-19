@@ -6,6 +6,9 @@ import padlock from "../../assets/images/padlock_white.png";
 import HeaderNavbar from "../HeaderNavbar";
 import LinkComponent, { LinkVariant } from "../Link";
 import Button from "../Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { faUserLock } from "@fortawesome/free-solid-svg-icons";
 
 const Header = (): JSX.Element => {
   return (
@@ -23,8 +26,7 @@ const Header = (): JSX.Element => {
       </div>
       <div className={styles.buttons}>
         <LinkComponent to={LOGIN} variant={LinkVariant.Primary}>
-          <img src={padlock} alt="padlock" className={styles.padlock} />
-          Login
+          <FontAwesomeIcon icon={faUserLock as IconProp} /> Login
         </LinkComponent>
         <div className={styles.separator}>|</div>
         <Button>Sign Up</Button>

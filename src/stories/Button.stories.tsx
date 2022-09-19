@@ -35,11 +35,16 @@ LinkPrimary.args = {
 };
 LinkPrimary.parameters = {
   backgrounds: {
-    default: "pastel-salmon",
+    default: "lilac",
   },
 };
 
 export const LinkSecondary = Template.bind({});
 LinkSecondary.args = {
   variant: ButtonVariant.LinkSecondary,
+};
+LinkSecondary.parameters = {
+  backgrounds: {
+    default: "lilac",
+  },
 };
