@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "../Header";
 import ScrollToTop from "../ScrollToTop";
+import Footer from "../Footer";
 import {
   HOME,
   LOGIN,
@@ -17,6 +18,7 @@ const Layout = (): JSX.Element => (
     <ScrollToTop>
       <Routes>{/* <Route path={HOME} element={<Home/>} /> */}</Routes>
     </ScrollToTop>
+    <Footer />
   </BrowserRouter>
 );
 

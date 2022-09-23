@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { HOME } from "../../constants/routes";
-import styles from "./Header.module.scss";
+import styles from "./Footer.module.scss";
 import logoPlaceholder from "../../assets/images/tsume_logo_placeholder_salmon.png";
 import FooterNavbar from "../FooterNavbar";
 
