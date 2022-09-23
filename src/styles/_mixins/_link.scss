@@ -20,9 +20,9 @@
 
 @mixin secondary {
   @include primary();
-  color: _color.$violet;
+  color: _color.$salmon;
 
   &:hover {
-    color: _color.$white;
+    color: _color.$violet;
   }
 }
