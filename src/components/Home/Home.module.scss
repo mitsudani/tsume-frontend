@@ -1,0 +1,6 @@
+@use "../../styles/_variables/_sizes.scss" as _sizes;
+
+.container {
+  padding-top: _sizes.$header-height;
+  text-align: center;
+}

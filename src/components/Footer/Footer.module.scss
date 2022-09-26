@@ -8,9 +8,9 @@
   @include _container.flex_container(row, space-between, center);
   background: _color.$pastel-salmon;
   width: 100%;
-  min-height: 10rem;
+  min-height: 5rem;
   border-radius: 0 12.5rem 0 0;
-  padding: _sizes.$header-height 3rem 0 6rem;
+  padding: 0 3rem 0 6rem;
 
   .footerLogoAndNavbar {
     @include _container.flex_container(row, flex-start, center);
