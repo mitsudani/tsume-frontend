@@ -1812,6 +1812,14 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
+"@playwright/test@^1.26.0":
+  version "1.26.0"
+  resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.26.0.tgz#d0c4a7ffaa7df5b4a63e0d8dea133fdb1d6c5aef"
+  integrity sha512-D24pu1k/gQw3Lhbpc38G5bXlBjGDrH5A52MsrH12wz6ohGDeQ+aZg/JFSEsT/B3G8zlJe/EU4EkJK74hpqsjEg==
+  dependencies:
+    "@types/node" "*"
+    playwright-core "1.26.0"
+
 "@pmmmwh/react-refresh-webpack-plugin@^0.5.1", "@pmmmwh/react-refresh-webpack-plugin@^0.5.3":
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.5.7.tgz#58f8217ba70069cc6a73f5d7e05e85b458c150e2"
@@ -11276,6 +11284,11 @@ playwright-core@1.24.0, playwright-core@>=1.2.0:
   version "1.24.0"
   resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.24.0.tgz#ece821ceaf241bb7206329b1242b0cf6c1c60bdb"
   integrity sha512-BkDWdVsoEEC8m2glQlfNu1EN2qvjBsLIg5bD0wjrfwv9zVHktIsp80yYFObAcWreLNYhfRP4PlXE04lr5R4DFQ==
+
+playwright-core@1.26.0:
+  version "1.26.0"
+  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.26.0.tgz#850228f0638d410a5cdd69800d552f60e4d295cd"
+  integrity sha512-p8huU8eU4gD3VkJd3DA1nA7R3XA6rFvFL+1RYS96cSljCF2yJE9CWEHTPF4LqX8KN9MoWCrAfVKP5381X3CZqg==
 
 playwright@^1.14.0:
   version "1.24.0"
