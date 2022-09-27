@@ -19,6 +19,8 @@ jobs:
         run: npx playwright install --with-deps
       - name: Run build and start
         run: yarn build && yarn start
+        env:
+          CI: false
       - name: Run Playwright tests
         run: yarn playwright test
       - uses: actions/upload-artifact@v2
