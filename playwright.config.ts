@@ -12,6 +12,13 @@ import { devices } from "@playwright/test";
  */
 const config: PlaywrightTestConfig = {
   testDir: "./e2e",
+  webServer: {
+    command: "yarn start",
+    // Point to the url that returns 200 once dev server is ready.
+    url: "http://localhost:3000/",
+    // Give it 120 seconds. Increase/decrease depending on your dev server speed.
+    timeout: 120000,
+  },
   /* Maximum time one test can run for. */
   timeout: 30 * 1000,
   expect: {
@@ -40,6 +47,7 @@ const config: PlaywrightTestConfig = {
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
+    baseURL: "http://localhost:3000/",
   },
 
   /* Configure projects for major browsers */

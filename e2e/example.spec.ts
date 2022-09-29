@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test("homepage has Tsume in title and How It Works link linking to the that page", async ({
   page,
 }) => {
-  await page.goto("https://localhost:3000/");
+  await page.goto("http://localhost:3000/");
 
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/Tsume/);
