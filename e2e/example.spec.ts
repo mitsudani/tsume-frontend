@@ -1,22 +1,16 @@
 import { test, expect } from "@playwright/test";
 
-test("homepage has Tsume in title and How It Works link linking to the that page", async ({
+// example e2e test from Playwright tutorial
+test("homepage has Tsume in title and How It Works link linking to that page", async ({
   page,
 }) => {
   await page.goto("http://localhost:3000/");
-
-  // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/Tsume/);
 
   // create a locator
-  const getStarted = page.locator("text=How It Works");
+  const howItWorks = page.locator("text=How It Works");
+  await expect(howItWorks).toHaveAttribute("href", "/how-it-works");
 
-  // Expect an attribute "to be strictly equal" to the value.
-  await expect(getStarted).toHaveAttribute("href", "/how-it-works");
-
-  // Click the get started link.
-  // await getStarted.click();
-
-  // Expects the URL to contain intro.
-  // await expect(page).toHaveURL(/.*intro/);
+  await howItWorks.click();
+  //await expect(page).toHaveURL(/how-it-works/);
 });
