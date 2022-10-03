@@ -2,20 +2,20 @@
 @use "../../styles/_mixins/_link.scss" as link;
 
 .button {
-  &.primary {
-    @include button.primary;
-  }
+    &.primary {
+        @include button.primary;
+    }
 
-  &.secondary {
-    @include button.primary;
-    @include button.secondary;
-  }
+    &.secondary {
+        @include button.primary;
+        @include button.secondary;
+    }
 
-  &.linkPrimary {
-    @include link.primary;
-  }
+    &.linkPrimary {
+        @include link.primary;
+    }
 
-  &.linkSecondary {
-    @include link.secondary;
-  }
+    &.linkSecondary {
+        @include link.secondary;
+    }
 }

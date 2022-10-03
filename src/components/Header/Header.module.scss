@@ -5,42 +5,42 @@
 @use "../../styles/_mixins/_link.scss" as _link;
 
 .container {
-  @include _container.flex_container(row, space-between, center);
-  background: _color.$lilac;
-  position: fixed;
-  width: 100%;
-  min-height: _sizes.$header-height;
-  border-radius: 0 0 0 12.5rem;
-  padding: 0 3rem 0 6rem;
+    @include _container.flex_container(row, space-between, center);
+    background: _color.$lilac;
+    position: fixed;
+    width: 100%;
+    min-height: _sizes.$header-height;
+    border-radius: 0 0 0 12.5rem;
+    padding: 0 3rem 0 6rem;
 
-  .logoAndNavbar,
-  .buttons {
-    @include _container.flex_container(row, flex-start, center);
+    .logoAndNavbar,
+    .buttons {
+        @include _container.flex_container(row, flex-start, center);
 
-    .tsumeLogo {
-      max-width: 5rem;
+        .tsumeLogo {
+            max-width: 5rem;
+        }
     }
-  }
 
-  .separator {
-    color: _color.$white;
-  }
-
-  .buttons > a,
-  .separator {
-    margin-right: 0.7rem;
-  }
-
-  .buttons {
-    a {
-      display: block;
+    .separator {
+        color: _color.$white;
     }
-  }
 
-  .buttons {
-    .padlock {
-      max-width: 1.5rem;
-      margin: 0 auto;
+    .buttons > a,
+    .separator {
+        margin-right: 0.7rem;
     }
-  }
+
+    .buttons {
+        a {
+            display: block;
+        }
+    }
+
+    .buttons {
+        .padlock {
+            max-width: 1.5rem;
+            margin: 0 auto;
+        }
+    }
 }

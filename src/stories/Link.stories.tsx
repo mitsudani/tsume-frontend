@@ -3,49 +3,49 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import Link, { LinkVariant } from "../components/Link";
 
 export default {
-  title: "Link",
-  component: Link,
-  args: {
-    children: "Link",
-    to: "https://github.com/mitsudani",
-  },
-  argTypes: {
-    variant: {
-      control: {
-        labels: $enum(LinkVariant).getKeys(),
-      },
+    title: "Link",
+    component: Link,
+    args: {
+        children: "Link",
+        to: "https://github.com/mitsudani",
     },
-  },
+    argTypes: {
+        variant: {
+            control: {
+                labels: $enum(LinkVariant).getKeys(),
+            },
+        },
+    },
 } as ComponentMeta<typeof Link>;
 
 const Template: ComponentStory<typeof Link> = (args) => <Link {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  variant: LinkVariant.Primary,
+    variant: LinkVariant.Primary,
 };
 Primary.parameters = {
-  backgrounds: {
-    default: "lilac",
-  },
+    backgrounds: {
+        default: "lilac",
+    },
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  variant: LinkVariant.Secondary,
+    variant: LinkVariant.Secondary,
 };
 Secondary.parameters = {
-  backgrounds: {
-    default: "lilac",
-  },
+    backgrounds: {
+        default: "lilac",
+    },
 };
 
 export const ButtonPrimary = Template.bind({});
 ButtonPrimary.args = {
-  variant: LinkVariant.ButtonPrimary,
+    variant: LinkVariant.ButtonPrimary,
 };
 
 export const ButtonSecondary = Template.bind({});
 ButtonSecondary.args = {
-  variant: LinkVariant.ButtonSecondary,
+    variant: LinkVariant.ButtonSecondary,
 };

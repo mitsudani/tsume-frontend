@@ -5,28 +5,28 @@
 @use "../../styles/_mixins/_link.scss" as _link;
 
 .container {
-  @include _container.flex_container(row, space-between, center);
-  background: _color.$pastel-salmon;
-  width: 100%;
-  min-height: 5rem;
-  border-radius: 0 12.5rem 0 0;
-  padding: 0 3rem 0 6rem;
-
-  .footerLogoAndNavbar {
-    @include _container.flex_container(row, flex-start, center);
-
-    .tsumeLogo {
-      max-width: 5rem;
-    }
-  }
-
-  .social {
     @include _container.flex_container(row, space-between, center);
-    margin-right: 1rem;
+    background: _color.$pastel-salmon;
+    width: 100%;
+    min-height: 5rem;
+    border-radius: 0 12.5rem 0 0;
+    padding: 0 3rem 0 6rem;
 
-    img {
-      max-width: 2rem;
-      margin-right: 1.5rem;
+    .footerLogoAndNavbar {
+        @include _container.flex_container(row, flex-start, center);
+
+        .tsumeLogo {
+            max-width: 5rem;
+        }
     }
-  }
+
+    .social {
+        @include _container.flex_container(row, space-between, center);
+        margin-right: 1rem;
+
+        img {
+            max-width: 2rem;
+            margin-right: 1.5rem;
+        }
+    }
 }

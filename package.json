@@ -32,6 +32,8 @@
         "test-storybook": "test-storybook",
         "lint": "eslint .",
         "lint:fix": "eslint --fix",
+        "prettier-format": "prettier --write src/**/*.{tsx,js,scss,html}",
+        "prettier-check": "prettier --check src/**/*.{tsx,js,scss,html}",
         "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
     },
     "eslintConfig": {

@@ -2,25 +2,25 @@
 @use "../_variables/_fonts.scss" as _font;
 
 @mixin primary {
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-family: _font.$mukta;
-  display: inline-block;
-  border: 0.0625rem solid _color.$salmon;
-  border-radius: 1.563rem;
-  max-height: 2.2rem;
-  min-width: 10rem;
-  color: _color.$white;
-  background-color: _color.$salmon;
-  cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-family: _font.$mukta;
+    display: inline-block;
+    border: 0.0625rem solid _color.$salmon;
+    border-radius: 1.563rem;
+    max-height: 2.2rem;
+    min-width: 10rem;
+    color: _color.$white;
+    background-color: _color.$salmon;
+    cursor: pointer;
 
-  &:hover {
-    filter: brightness(125%);
-  }
+    &:hover {
+        filter: brightness(125%);
+    }
 }
 
 @mixin secondary {
-  background-color: _color.$lilac;
-  border: 0.0625rem solid _color.$lilac;
+    background-color: _color.$lilac;
+    border: 0.0625rem solid _color.$lilac;
 }

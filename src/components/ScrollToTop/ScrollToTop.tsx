@@ -2,13 +2,13 @@ import { ReactElement, useEffect } from "react";
 import { useLocation } from "react-router";
 
 const ScrollToTop = ({ children }: { children: ReactElement }): JSX.Element => {
-  const { pathname } = useLocation();
+    const { pathname } = useLocation();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
 
-  return children;
+    return children;
 };
 
 export default ScrollToTop;

@@ -7,8 +7,8 @@
 ///   align-items value
 
 @mixin flex_container($direction, $justify, $align) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
 }
