@@ -30,7 +30,7 @@
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook",
         "test-storybook": "test-storybook",
-        "lint": "eslint .",
+        "lint": "eslint . --ext .tsx",
         "lint:fix": "eslint --fix",
         "prettier-format": "prettier --write src/**/*.{tsx,js,scss,html}",
         "prettier-check": "prettier --check src/**/*.{tsx,js,scss,html}",
