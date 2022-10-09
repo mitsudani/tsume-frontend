@@ -1,10 +1,18 @@
 import Header from "../components/Header";
 import { render, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router";
 
-describe("Header", () => {
-    test("should render children", () => {
-        render(<Header />);
+describe("Header unit tests", () => {
+    beforeEach(() => {
+        render(
+            <MemoryRouter>
+                <Header />
+            </MemoryRouter>
+        );
+    });
 
-        expect(screen.getByRole("button")).toBeInTheDocument();
+    test("Should render links", () => {
+        const links = screen.getAllByRole("link");
+        expect(links.length).toEqual(4);
     });
 });

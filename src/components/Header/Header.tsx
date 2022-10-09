@@ -20,11 +20,11 @@ const Header = (): JSX.Element => {
                 <HeaderNavbar />
             </div>
             <div className={styles.buttons}>
-                <LinkComponent to={LOGIN} variant={LinkVariant.Primary}>
+                <LinkComponent to={LOGIN} variant={LinkVariant.Primary} data-testid="login-link">
                     <FontAwesomeIcon icon={faUserLock as IconProp} /> Login
                 </LinkComponent>
                 <div className={styles.separator}>|</div>
-                <Button>Sign Up</Button>
+                <Button data-testid="signup-btn">Sign Up</Button>
             </div>
         </header>
     );
