@@ -8,6 +8,8 @@
     text-align: center;
     background-color: _color.$violet;
     height: auto;
+    min-height: _sizes.$min-height-main;
+    position: relative;
 
     .titleContainer {
         @include _container.flex_container(row, center, center);
@@ -17,6 +19,7 @@
         h1 {
             font-family: _font.$ms-madi;
             font-size: 13rem;
+            font-weight: lighter;
         }
 
         h2 {
@@ -46,5 +49,24 @@
         width: 40rem;
         text-align: center;
         margin: auto;
+    }
+
+    a {
+        margin: 2rem 0 3rem 0;
+    }
+
+    .background {
+        position: absolute;
+
+        .circle1 {
+            height: 25rem;
+            width: 25rem;
+            background-color: _color.$lilac;
+            border-radius: 50%;
+            display: inline-block;
+            z-index: -100;
+            top: 0;
+            left: 0;
+        }
     }
 }

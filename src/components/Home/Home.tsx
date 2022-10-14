@@ -20,6 +20,9 @@ const Home = (): JSX.Element => {
             <LinkComponent to={LOGIN} variant={LinkVariant.ButtonPrimary} data-testid="get-started-link">
                 Get Started
             </LinkComponent>
+            <div className={styles.background}>
+                <span className={styles.circle1}></span>
+            </div>
         </main>
     );
 };

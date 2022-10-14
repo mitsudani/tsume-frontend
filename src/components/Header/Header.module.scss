@@ -7,6 +7,7 @@
     @include _container.flex_container(row, space-between, center);
     background: _color.$lilac;
     position: fixed;
+    z-index: 100;
     width: 100%;
     min-height: _sizes.$header-height;
     border-radius: 0 0 0 12.5rem;
