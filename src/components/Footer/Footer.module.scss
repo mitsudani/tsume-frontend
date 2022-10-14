@@ -11,6 +11,8 @@
     min-height: 5rem;
     border-radius: 0 12.5rem 0 0;
     padding: 0 3rem 0 6rem;
+    position: absolute;
+    bottom: 0;
 
     .footerLogoAndNavbar {
         @include _container.flex_container(row, flex-start, center);
