@@ -55,17 +55,32 @@
         margin: 2rem 0 3rem 0;
     }
 
-    .background {
+    .backgroundLeft {
         position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        span {
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+        }
 
         .circle1 {
+            background-color: _color.$lilac;
             height: 25rem;
             width: 25rem;
-            background-color: _color.$lilac;
-            border-radius: 50%;
-            display: inline-block;
-            z-index: -100;
-            top: 0;
+            top: 20rem;
+            left: 0;
+        }
+
+        .circle2 {
+            height: 25rem;
+            width: 25rem;
+            background-color: _color.$white;
+            opacity: 17%;
+            top: 10rem;
             left: 0;
         }
     }
