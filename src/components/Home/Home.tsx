@@ -27,6 +27,12 @@ const Home = (): JSX.Element => {
                 <span className={styles.circleLilac4}></span>
                 <span className={styles.circleLilac5}></span>
                 <span className={styles.circleWhite1}></span>
+                <span className={styles.circleWhite2}></span>
+                <span className={styles.circleWhite3}></span>
+                <span className={styles.circleWhite4}></span>
+                <span className={styles.circleWhite5}></span>
+                <span className={styles.circleWhite6}></span>
+                <span className={styles.circleWhite7}></span>
             </div>
         </main>
     );

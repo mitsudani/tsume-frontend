@@ -104,19 +104,70 @@
         }
 
         .circleLilac5 {
-            height: 20rem;
-            width: 20rem;
+            height: 14rem;
+            width: 14rem;
             top: 30rem;
             left: 13rem;
         }
 
-        .circleWhite1 {
-            height: 25rem;
-            width: 25rem;
+        .circleWhite1,
+        .circleWhite2,
+        .circleWhite3,
+        .circleWhite4,
+        .circleWhite5,
+        .circleWhite6,
+        .circleWhite7 {
             background-color: _color.$white;
             opacity: 17%;
-            top: 10rem;
-            left: 0;
+        }
+
+        .circleWhite1 {
+            height: 7rem;
+            width: 7rem;
+            top: 15rem;
+            left: 6rem;
+        }
+
+        .circleWhite2 {
+            height: 12rem;
+            width: 12rem;
+            top: 18rem;
+            left: -2rem;
+        }
+
+        .circleWhite3 {
+            height: 5rem;
+            width: 5rem;
+            top: 21rem;
+            left: 31rem;
+        }
+
+        .circleWhite4 {
+            height: 7rem;
+            width: 7rem;
+            top: 28rem;
+            left: 10rem;
+        }
+
+        .circleWhite5 {
+            height: 4rem;
+            width: 4rem;
+            top: 35rem;
+            left: 8rem;
+        }
+
+        .circleWhite6 {
+            height: 3rem;
+            width: 3rem;
+            top: 34rem;
+            left: 22rem;
+        }
+
+        .circleWhite7 {
+            height: 2rem;
+            width: 2rem;
+            top: 37rem;
+            left: 29rem;
         }
     }
 }
