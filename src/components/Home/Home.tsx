@@ -21,8 +21,12 @@ const Home = (): JSX.Element => {
                 Get Started
             </LinkComponent>
             <div className={styles.backgroundLeft}>
-                <span className={styles.circle1}></span>
-                <span className={styles.circle2}></span>
+                <span className={styles.circleLilac1}></span>
+                <span className={styles.circleLilac2}></span>
+                <span className={styles.circleLilac3}></span>
+                <span className={styles.circleLilac4}></span>
+                <span className={styles.circleLilac5}></span>
+                <span className={styles.circleWhite1}></span>
             </div>
         </main>
     );

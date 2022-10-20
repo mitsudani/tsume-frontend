@@ -67,15 +67,50 @@
             border-radius: 50%;
         }
 
-        .circle1 {
+        .circleLilac1,
+        .circleLilac2,
+        .circleLilac3,
+        .circleLilac4,
+        .circleLilac5 {
             background-color: _color.$lilac;
-            height: 25rem;
-            width: 25rem;
-            top: 20rem;
-            left: 0;
         }
 
-        .circle2 {
+        .circleLilac1 {
+            height: 17rem;
+            width: 17rem;
+            top: 8rem;
+            left: -3rem;
+        }
+
+        .circleLilac2 {
+            height: 16rem;
+            width: 16rem;
+            top: 12.5rem;
+            left: 18rem;
+        }
+
+        .circleLilac3 {
+            height: 10rem;
+            width: 10rem;
+            top: 23rem;
+            left: 5.5rem;
+        }
+
+        .circleLilac4 {
+            height: 12rem;
+            width: 12rem;
+            top: 27rem;
+            left: -5rem;
+        }
+
+        .circleLilac5 {
+            height: 20rem;
+            width: 20rem;
+            top: 30rem;
+            left: 13rem;
+        }
+
+        .circleWhite1 {
             height: 25rem;
             width: 25rem;
             background-color: _color.$white;
