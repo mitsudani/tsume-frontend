@@ -11,8 +11,8 @@ const Home = (): JSX.Element => {
                     The complete <span>tracker</span> <br />
                     for <span>nail artists</span>
                 </h2>
+                <div className={styles.line}></div>
             </div>
-            <div className={styles.line}></div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.

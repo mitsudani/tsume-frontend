@@ -37,10 +37,12 @@
     }
 
     .line {
-        border-top: 2px solid _color.$white;
-        margin-left: 40rem;
+        border-top: 0.156rem solid _color.$white;
+        margin-left: 15rem;
         margin-bottom: 2rem;
-        width: 30rem;
+        width: 33rem;
+        position: absolute;
+        top: 48%;
     }
 
     p {
