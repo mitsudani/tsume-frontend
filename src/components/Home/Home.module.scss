@@ -1,6 +1,248 @@
 @use "../../styles/_variables/_sizes.scss" as _sizes;
+@use "../../styles/_mixins/_container.scss" as _container;
+@use "../../styles/_variables/_colors.scss" as _color;
+@use "../../styles/_variables/_fonts.scss" as _font;
 
 .container {
     padding-top: _sizes.$header-height;
     text-align: center;
+    background-color: _color.$violet;
+    height: auto;
+    min-height: _sizes.$min-height-main;
+    position: relative;
+    overflow: hidden;
+
+    .titleContainer {
+        @include _container.flex_container(row, center, center);
+        color: _color.$white;
+        margin-top: 2rem;
+
+        h1 {
+            font-family: _font.$ms-madi;
+            font-size: 13rem;
+            font-weight: lighter;
+        }
+
+        h2 {
+            text-align: left;
+            margin-left: 2.5rem;
+            margin-top: 2rem;
+            font-family: _font.$mukta;
+            letter-spacing: 0.2rem;
+
+            span {
+                color: _color.$salmon;
+            }
+        }
+    }
+
+    .line {
+        border-top: 0.156rem solid _color.$white;
+        margin-left: 15rem;
+        margin-bottom: 2rem;
+        width: 33rem;
+        position: absolute;
+        top: 48%;
+    }
+
+    p {
+        color: _color.$white;
+        font-family: _font.$mukta;
+        font-size: 1.5rem;
+        width: 40rem;
+        text-align: center;
+        margin: auto;
+    }
+
+    a {
+        margin: 2rem 0 3rem 0;
+    }
+
+    .backgroundLeft,
+    .backgroundRight {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+
+        span {
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+        }
+    }
+
+    .circleLilacLeft1,
+    .circleLilacLeft2,
+    .circleLilacLeft3,
+    .circleLilacLeft4,
+    .circleLilacLeft5,
+    .circleLilacRight1,
+    .circleLilacRight2,
+    .circleLilacRight3 {
+        background-color: _color.$lilac;
+    }
+
+    .circleWhiteLeft1,
+    .circleWhiteLeft2,
+    .circleWhiteLeft3,
+    .circleWhiteLeft4,
+    .circleWhiteLeft5,
+    .circleWhiteLeft6,
+    .circleWhiteLeft7,
+    .circleWhiteRight1,
+    .circleWhiteRight2,
+    .circleWhiteRight3,
+    .circleWhiteRight4,
+    .circleWhiteRight5 {
+        background-color: _color.$white;
+        opacity: 17%;
+    }
+
+    .backgroundLeft {
+        left: 0;
+
+        .circleLilacLeft1 {
+            height: 17rem;
+            width: 17rem;
+            top: 8rem;
+            left: -3rem;
+        }
+
+        .circleLilacLeft2 {
+            height: 16rem;
+            width: 16rem;
+            top: 12.5rem;
+            left: 18rem;
+        }
+
+        .circleLilacLeft3 {
+            height: 10rem;
+            width: 10rem;
+            top: 23rem;
+            left: 5.5rem;
+        }
+
+        .circleLilacLeft4 {
+            height: 12rem;
+            width: 12rem;
+            top: 27rem;
+            left: -5rem;
+        }
+
+        .circleLilacLeft5 {
+            height: 14rem;
+            width: 14rem;
+            top: 30rem;
+            left: 13rem;
+        }
+
+        .circleWhiteLeft1 {
+            height: 7rem;
+            width: 7rem;
+            top: 15rem;
+            left: 6rem;
+        }
+
+        .circleWhiteLeft2 {
+            height: 12rem;
+            width: 12rem;
+            top: 18rem;
+            left: -2rem;
+        }
+
+        .circleWhiteLeft3 {
+            height: 5rem;
+            width: 5rem;
+            top: 21rem;
+            left: 31rem;
+        }
+
+        .circleWhiteLeft4 {
+            height: 7rem;
+            width: 7rem;
+            top: 28rem;
+            left: 10rem;
+        }
+
+        .circleWhiteLeft5 {
+            height: 4rem;
+            width: 4rem;
+            top: 35rem;
+            left: 8rem;
+        }
+
+        .circleWhiteLeft6 {
+            height: 3rem;
+            width: 3rem;
+            top: 34rem;
+            left: 22rem;
+        }
+
+        .circleWhiteLeft7 {
+            height: 2rem;
+            width: 2rem;
+            top: 37rem;
+            left: 29rem;
+        }
+    }
+
+    .backgroundRight {
+        right: 0;
+
+        .circleLilacRight1 {
+            height: 10rem;
+            width: 10rem;
+            top: 13rem;
+            right: 11rem;
+        }
+
+        .circleLilacRight2 {
+            height: 20rem;
+            width: 20rem;
+            top: 18rem;
+            right: -6rem;
+        }
+
+        .circleLilacRight3 {
+            height: 12rem;
+            width: 12rem;
+            top: 27rem;
+            right: 12rem;
+        }
+
+        .circleWhiteRight1 {
+            height: 7rem;
+            width: 7rem;
+            top: 10rem;
+            right: 8rem;
+        }
+
+        .circleWhiteRight2 {
+            height: 6rem;
+            width: 6rem;
+            top: 23rem;
+            right: 11rem;
+        }
+
+        .circleWhiteRight3 {
+            height: 5rem;
+            width: 5rem;
+            top: 25rem;
+            right: 7rem;
+        }
+
+        .circleWhiteRight4 {
+            height: 2.5rem;
+            width: 2.5rem;
+            top: 30rem;
+            right: 25rem;
+        }
+
+        .circleWhiteRight5 {
+            height: 15rem;
+            width: 15rem;
+            top: 35rem;
+            right: 17rem;
+        }
+    }
 }
