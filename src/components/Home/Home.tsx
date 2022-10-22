@@ -36,13 +36,13 @@ const Home = (): JSX.Element => {
             </div>
             <div className={styles.backgroundRight}>
                 <span className={styles.circleLilacRight1}></span>
-                <span className={styles.circleLilac2}></span>
-                <span className={styles.circleLilac3}></span>
-                <span className={styles.circleWhite1}></span>
-                <span className={styles.circleWhite2}></span>
-                <span className={styles.circleWhite3}></span>
-                <span className={styles.circleWhite4}></span>
-                <span className={styles.circleWhite5}></span>
+                <span className={styles.circleLilacRight2}></span>
+                <span className={styles.circleLilacRight3}></span>
+                <span className={styles.circleWhiteRight1}></span>
+                <span className={styles.circleWhiteRight2}></span>
+                <span className={styles.circleWhiteRight3}></span>
+                <span className={styles.circleWhiteRight4}></span>
+                <span className={styles.circleWhiteRight5}></span>
             </div>
         </main>
     );

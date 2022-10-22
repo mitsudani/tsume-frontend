@@ -10,6 +10,7 @@
     height: auto;
     min-height: _sizes.$min-height-main;
     position: relative;
+    overflow: hidden;
 
     .titleContainer {
         @include _container.flex_container(row, center, center);
@@ -73,7 +74,9 @@
     .circleLilacLeft3,
     .circleLilacLeft4,
     .circleLilacLeft5,
-    .circleLilacRight1 {
+    .circleLilacRight1,
+    .circleLilacRight2,
+    .circleLilacRight3 {
         background-color: _color.$lilac;
     }
 
@@ -83,7 +86,12 @@
     .circleWhiteLeft4,
     .circleWhiteLeft5,
     .circleWhiteLeft6,
-    .circleWhiteLeft7 {
+    .circleWhiteLeft7,
+    .circleWhiteRight1,
+    .circleWhiteRight2,
+    .circleWhiteRight3,
+    .circleWhiteRight4,
+    .circleWhiteRight5 {
         background-color: _color.$white;
         opacity: 17%;
     }
@@ -180,10 +188,24 @@
         right: 0;
 
         .circleLilacRight1 {
+            height: 10rem;
+            width: 10rem;
+            top: 13rem;
+            right: 11rem;
+        }
+
+        .circleLilacRight2 {
             height: 20rem;
             width: 20rem;
             top: 18rem;
             right: -6rem;
+        }
+
+        .circleLilacRight3 {
+            height: 12rem;
+            width: 12rem;
+            top: 27rem;
+            right: 12rem;
         }
     }
 }
