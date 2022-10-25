@@ -20,16 +20,16 @@ const Footer = (): JSX.Element => {
             </div>
             <div className={styles.social}>
                 <a href={FACEBOOK} target="_blank" rel="noopener noreferrer" data-testid="facebook-link">
-                    <img src={facebook} alt="Tsume Facebook" />
+                    <img src={facebook} alt="Social Tsume Facebook" />
                 </a>
                 <a href={INSTAGRAM} target="_blank" rel="noopener noreferrer" data-testid="facebook-link">
-                    <img src={instagram} alt="Tsume Instagram" />
+                    <img src={instagram} alt="Social Tsume Instagram" />
                 </a>
                 <a href={TIKTOK} target="_blank" rel="noopener noreferrer" data-testid="facebook-link">
-                    <img src={tiktok} alt="Tsume TikTok" />
+                    <img src={tiktok} alt="Social Tsume TikTok" />
                 </a>
                 <a href={TWITTER} target="_blank" rel="noopener noreferrer" data-testid="facebook-link">
-                    <img src={twitter} alt="Tsume Facebook" />
+                    <img src={twitter} alt="Social Tsume Twitter" />
                 </a>
             </div>
         </footer>
