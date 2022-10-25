@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { HOME, LOGIN } from "../../constants/routes";
 import styles from "./Header.module.scss";
 import logoPlaceholder from "../../assets/images/tsume_logo_placeholder.png";
-import padlock from "../../assets/images/padlock_white.png";
 import HeaderNavbar from "../HeaderNavbar";
 import LinkComponent, { LinkVariant } from "../Link";
 import Button from "../Button";
