@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router";
-import { HOME, LOGIN } from "../constants/routes";
+import { HOME, LOGIN, SIGNUP } from "../constants/routes";
 
 describe("Header unit tests", () => {
     beforeEach(() => {
@@ -14,7 +14,7 @@ describe("Header unit tests", () => {
 
     test("Should render links", () => {
         const links = screen.getAllByRole("link");
-        expect(links.length).toEqual(4);
+        expect(links.length).toEqual(5);
     });
 
     test("Should render logo with Home link", () => {
@@ -24,13 +24,13 @@ describe("Header unit tests", () => {
         expect(logoLink).toHaveAttribute("href", HOME);
     });
 
-    test("Should render login link", () => {
+    test("Login link should have correct route", () => {
         const login = screen.getByRole("link", { name: /Login/i });
         expect(login).toHaveAttribute("href", LOGIN);
     });
 
-    // WIP / TO-DO: Change button to link
-    test("Should render Sign Up link", () => {
-        const signup = screen.getByRole("button", { name: /Sign Up/i });
+    test("Sign Up link should have correct route", () => {
+        const signup = screen.getByRole("link", { name: /Sign Up/i });
+        expect(signup).toHaveAttribute("href", SIGNUP);
     });
 });
