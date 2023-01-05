@@ -2,7 +2,6 @@ import Footer from "../components/Footer";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router";
 import { HOME } from "../constants/routes";
-import { FACEBOOK } from "../constants/links";
 
 describe("Header unit tests", () => {
     beforeEach(() => {
