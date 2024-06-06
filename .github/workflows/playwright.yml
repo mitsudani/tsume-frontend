@@ -22,7 +22,7 @@ jobs:
         env:
           CI: false
       - name: Run Playwright tests
-        run: yarn playwright test
+        run: npx playwright test
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
