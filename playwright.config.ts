@@ -18,7 +18,7 @@ const config: PlaywrightTestConfig = {
     url: "http://localhost:3000/",
     // Give it 120 seconds. Increase/decrease depending on your dev server speed.
     timeout: 120000,
-    reuseExistingServer: true,
+    //reuseExistingServer: true,
   },
   /* Maximum time one test can run for. */
   timeout: 30 * 1000,
