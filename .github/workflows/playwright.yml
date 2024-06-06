@@ -17,6 +17,10 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
+      - name: Run build
+        run: yarn build
+        env:
+          CI: false
       - name: Run Playwright tests
         run: yarn playwright test
       - uses: actions/upload-artifact@v4
