@@ -10,6 +10,7 @@
         "@types/node": "^16.7.13",
         "@types/react": "^18.0.0",
         "@types/react-dom": "^18.0.0",
+        "install": "^0.13.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.3.0",
@@ -30,9 +31,10 @@
         "test-storybook": "test-storybook",
         "lint": "eslint . --ext .tsx",
         "lint:fix": "eslint --fix",
-        "prettier-format": "prettier --write src/**/*.{tsx,js,scss,html}",
-        "prettier-check": "prettier --check src/**/*.{tsx,js,scss,html}",
-        "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+        "prettier-format": "prettier --write src/**/*.{tsx,js,scss,html,ts}",
+        "prettier-check": "prettier --check src/**/*.{tsx,js,scss,html,ts}",
+        "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+        "playwright": "playwright test"
     },
     "eslintConfig": {
         "extends": [
@@ -53,10 +55,7 @@
         ]
     },
     "devDependencies": {
-        "@testing-library/jest-dom": "^5.14.1",
-        "@testing-library/react": "^13.4.0",
-        "@testing-library/user-event": "^13.2.1",
-        "@playwright/test": "^1.26.0",
+        "@playwright/test": "^1.44.1",
         "@storybook/addon-a11y": "^6.5.9",
         "@storybook/addon-actions": "^6.5.7",
         "@storybook/addon-backgrounds": "^6.5.11",
@@ -71,6 +70,9 @@
         "@storybook/react": "^6.5.7",
         "@storybook/test-runner": "^0.4.0",
         "@storybook/testing-library": "^0.0.11",
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.2.1",
         "@typescript-eslint/eslint-plugin": "^5.38.1",
         "@typescript-eslint/parser": "^5.38.1",
         "eslint": "^8.24.0",
