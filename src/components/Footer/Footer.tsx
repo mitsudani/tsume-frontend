@@ -14,7 +14,7 @@ const Footer = (): JSX.Element => {
         <footer className={styles.container}>
             <div className={styles.footerLogoAndNavbar}>
                 <Link to={HOME}>
-                    <img src={logoPlaceholder} alt="Tsume" className={styles.tsumeLogo} data-testid="logo-home-link" />
+                    <img src={logoPlaceholder} alt="Tsume" className={styles.tsumeLogo} data-testid="logo-home" />
                 </Link>
                 <FooterNavbar />
             </div>
@@ -22,13 +22,13 @@ const Footer = (): JSX.Element => {
                 <a href={FACEBOOK} target="_blank" rel="noopener noreferrer" data-testid="facebook-link">
                     <img src={facebook} alt="Social Tsume Facebook" />
                 </a>
-                <a href={INSTAGRAM} target="_blank" rel="noopener noreferrer" data-testid="facebook-link">
+                <a href={INSTAGRAM} target="_blank" rel="noopener noreferrer" data-testid="instagram-link">
                     <img src={instagram} alt="Social Tsume Instagram" />
                 </a>
-                <a href={TIKTOK} target="_blank" rel="noopener noreferrer" data-testid="facebook-link">
+                <a href={TIKTOK} target="_blank" rel="noopener noreferrer" data-testid="tiktok-link">
                     <img src={tiktok} alt="Social Tsume TikTok" />
                 </a>
-                <a href={TWITTER} target="_blank" rel="noopener noreferrer" data-testid="facebook-link">
+                <a href={TWITTER} target="_blank" rel="noopener noreferrer" data-testid="twitter-link">
                     <img src={twitter} alt="Social Tsume Twitter" />
                 </a>
             </div>

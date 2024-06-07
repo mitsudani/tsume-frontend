@@ -13,7 +13,7 @@ const Header = (): JSX.Element => {
         <header className={styles.container}>
             <div className={styles.logoAndNavbar}>
                 <Link to={HOME} data-testid="header-home-link">
-                    <img src={logoPlaceholder} alt="Tsume" className={styles.tsumeLogo} data-testid="logo-home-link" />
+                    <img src={logoPlaceholder} alt="Tsume" className={styles.tsumeLogo} data-testid="logo-home" />
                 </Link>
                 <HeaderNavbar />
             </div>
