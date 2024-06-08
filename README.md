@@ -23,13 +23,13 @@ Starting the server
     
 ## Running Tests
 
-Run unit test
+Run unit tests
 
 ```bash
   yarn test
 ```
 
-Run e2e test
+Run e2e tests
 
 ```bash
   yarn playwright
